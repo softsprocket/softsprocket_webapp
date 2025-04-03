@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/softsprocket_webapp.props" />
-</Project>
