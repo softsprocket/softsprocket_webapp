@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "vpxb97m5PnqHXP2BlbrHwBe+a6bri0iI/lCkx5xE6L8=",
+  "Source": "softsprocket_webapp",
+  "BasePath": "_content/softsprocket_webapp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "softsprocket_webapp/wwwroot",
+      "Source": "softsprocket_webapp",
+      "ContentRoot": "/home/greg/Development/dotnet/softsprocket_webapp/wwwroot/",
+      "BasePath": "_content/softsprocket_webapp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/greg/Development/dotnet/softsprocket_webapp/wwwroot/index.html",
+      "SourceId": "softsprocket_webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/greg/Development/dotnet/softsprocket_webapp/wwwroot/",
+      "BasePath": "_content/softsprocket_webapp",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

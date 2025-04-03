@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/softsprocket_webapp.props" />
+</Project>
