@@ -1,0 +1,6 @@
+#cert*
+certs/*
+#build#
+bin/*
+obj/*
+
