@@ -1,6 +1,6 @@
 # softsprocket_webapp
 
-A cross-platform C# web application that serves static files over HTTP and HTTPS. The application dynamically resolves content types, supports configurable web root directories, allows HTTPS configuration with optional certificates, and supports proxying requests to external services or commands.
+A cross-platform C# http server that serves static files over HTTP and HTTPS. The application dynamically resolves content types, supports configurable web root directories, allows HTTPS configuration with optional certificates, and supports proxying requests to external services or commands.
 
 ## Features
 - Serves static files from a configurable web root directory.
