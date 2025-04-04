@@ -1,5 +1,6 @@
 #cert*
-certs/*
+*.pfx
+*.pem
 #build#
 bin/*
 obj/*
