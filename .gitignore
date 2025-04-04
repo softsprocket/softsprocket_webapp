@@ -4,4 +4,6 @@
 #build#
 bin/*
 obj/*
+*.sln
+
 
