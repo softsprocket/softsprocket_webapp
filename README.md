@@ -19,6 +19,7 @@ A cross-platform C# web application that serves static files over HTTP and HTTPS
 ```bash
 git clone <repository-url>
 cd softsprocket_webapp
+mkdir certs
 ```
 
 ### 2. Configure the Application
