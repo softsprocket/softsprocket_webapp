@@ -20,17 +20,38 @@ namespace softsprocket_webapp.Controllers
             if (System.IO.File.Exists(contentTypesPath))
             {
                 string json = System.IO.File.ReadAllText(contentTypesPath);
-                _contentTypes = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
+                _contentTypes = JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new();
             }
             else
             {
-                _contentTypes = new Dictionary<string, string>(); // Fallback to an empty dictionary
+                _contentTypes = new(); // Fallback to an empty dictionary
             }
         }
+
+        [HttpGet]
+        public IActionResult Index()
+        {
+            // Serve the default index.html file
+            string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "index.html");
+            return ServeFile(filePath);
+        }
+       
+        [HttpGet("index.html")]
+        public IActionResult IndexHtml()
+        {
+            // Serve the index.html file
+            string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "index.html");
+            return ServeFile(filePath);
+        }
+        
+
+
+
 
         [HttpGet("{*filePath}")]
         public IActionResult ServeFile(string filePath)
         {
+            Console.WriteLine($"Requested file path: {filePath}");
             // Default to "index.html" if no file is specified
             if (string.IsNullOrEmpty(filePath))
             {
@@ -61,7 +82,7 @@ namespace softsprocket_webapp.Controllers
             string extension = Path.GetExtension(filePath).ToLower();
 
             // Try to get the content type from the loaded dictionary
-            if (_contentTypes.TryGetValue(extension, out string contentType))
+            if (_contentTypes.TryGetValue(extension, out string? contentType) && contentType != null)
             {
                 return contentType;
             }

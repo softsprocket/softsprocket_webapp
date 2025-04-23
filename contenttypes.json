@@ -2,6 +2,7 @@
     ".html": "text/html",
     ".css": "text/css",
     ".js": "application/javascript",
+    ".mjs": "application/javascript",
     ".png": "image/png",
     ".jpg": "image/jpeg",
     ".gif": "image/gif",
